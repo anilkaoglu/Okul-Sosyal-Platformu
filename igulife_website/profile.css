@@ -1,0 +1,156 @@
+.club-capacity-section {
+    padding: 20px;
+  }
+  
+  .club-card {
+    background-color: rgb(74, 73, 73);
+    opacity: 0.75;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 350px;
+    border-radius: 15%;
+    
+  }
+  
+  .speedometer {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background: radial-gradient(circle at center, #ff5500, #ff0000);
+  }
+  
+  .needle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 50%;
+    width: 4px;
+    height: 40%;
+    background-color: #00cc66; /* Green */
+    transform: translate(-50%, -100%) rotate(0deg);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .capacity-num {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+  }
+  
+  .speedometer[data-capacity="75"] {
+    background: radial-gradient(circle at center, #ffdd00, #ff0000 );
+  }
+  
+  .speedometer[data-capacity="60"] {
+    background: radial-gradient(circle at center, #00cc66, #ff5500);
+  }
+  
+  .speedometer[data-capacity="90"] {
+    background: radial-gradient(circle at center, #0099ff, #ff5500);
+  }
+  
+  .speedometer:hover .needle {
+    animation: bob 0.5s infinite alternate;
+  }
+
+  .speedometer[data-capacity="30"] {
+    background: radial-gradient(circle at center, #00cc66, #66ff00);
+  }
+  .speedometer[data-capacity="45"] {
+      background: radial-gradient(circle at center, #ffdd00, #ff5500);  
+  }
+  .speedometer[data-capacity="55"] {
+      background: radial-gradient(circle at center, #ffdd00, #ff3300);
+  }        
+  @keyframes bob {
+    0% {
+      transform: translate(-50%, -100%) rotate(-10deg);
+    }
+    100% {
+      transform: translate(-50%, -100%) rotate(10deg);
+    }
+  }
+
+  #main-page-button {
+    position: fixed;
+    margin-right: 9px;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #7971ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 9999;
+  }
+  
+  #main-page-button:hover {
+    background-color: #007bff;
+  }
+
+  .join-clubs-section {
+    background-color: #3e3e3e;
+    opacity: 0.75;
+    padding: 40px;
+    text-align: center;
+    color: white;
+  }
+  
+  .join-clubs-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .join-clubs-section p {
+    margin-bottom: 30px;
+  }
+  
+  #join-clubs-button {
+    padding: 10px 20px;
+    background-color: #7971ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #join-clubs-button:hover {
+    background-color: #007bff;
+  }
+  
+  body {
+    background-image: url('images/hero_1.jpg'); /* Arka plan resmi */
+    background-size: cover; /* Resmi sayfaya sığacak şekilde ölçeklendir */
+    background-position: center; /* Resmi sayfanın ortasına yerleştir */
+  }
+  
+  
+.color {
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.h3{
+  text-align: center;
+  color: white;
+  
+}
+
+.genel{
+  display: flex;
+}
+
+.sol1{
+  margin-left: 125px;
+}
+
+.sag1{
+  margin-left: 150px;
+}

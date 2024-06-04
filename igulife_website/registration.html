@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="registration.css">
+
+<section class="registration-form-section">
+    <h2>Kulüp Başvuru Formu</h2>
+    <form id="club-registration-form">
+      <div class="form-group">
+        <label for="name">İsim</label>
+        <input type="text" id="name" name="name" placeholder="Ad Soyad" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email adresinizi giriniz" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Telefon Numaranız</label>
+        <input type="tel" id="phone" name="phone" placeholder="Telefon numaranızı giriniz" required>
+      </div>
+      <div class="form-group">
+        <label for="club">Kulüpler</label>
+        <select id="club" name="club" required>
+          <option value="">Kulüp Seçin</option>
+          <option value="art">Beslenme ve Diyetetik Kulübü (İGÜDYT)</option>
+          <option value="sports">Esports Gelişim Kulübü</option>
+          <option value="science">Çocuk Gelişimciler Kulübü</option>
+          <option value="science">Erasmus Kulübü</option>
+          <option value="science">Dans Kulübü</option>
+          <option value="science">Elektrik ve Elektronik Mühendisliği Kulübü</option>
+          <option value="science">Gastroart Kulübü</option>
+          <option value="science">Gelişim Finans ve Yatırım Kulübü</option>
+          <option value="science">Havacılık Kulübü</option>
+          <option value="science">İGÜ FTR Kulübü</option>
+          <option value="science">Elektrik ve Elektronik Mühendisliği Kulübü</option>
+          <option value="science">Ergoterapi ve Toplumsal Rehabilitasyon Kulübü</option>
+          <option value="science">Dil Düşünce ve Edebiyat Kulübü</option>
+          <option value="science">İGÜ Kamera ve Çekim Kulübü</option>
+          <option value="science">İletişim ve İnovasyon Kulübü</option>
+          <option value="science">Lojistik ve Ticaret Kulübü</option>
+
+        
+        </select>
+      </div>
+      <button type="submit">Başvur</button>
+    </form>
+  </section>
+
+  <div id="popup-overlay" class="popup-overlay">
+    <div class="popup">
+      <h2>Başvurunuz için Teşekkürler!</h2>
+      <p>Başvurunuz değerlendirildikten sonra size geri dönüş yapılacaktır.</p>
+      <button id="close-popup">Kapat</button>
+    </div>
+  </div>
+
+  <button id="main-page-button">Çıkış Yap</button>
+
+  <script src="registration.js"></script>
+  
